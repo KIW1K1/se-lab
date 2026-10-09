@@ -28,6 +28,8 @@ public class TorpedoStore {
     }
   }
 
+  // simulate firing of the torpedos, return whether it was successful
+  //if not enough torpedos are available, throw an IllegalArgumentException
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
